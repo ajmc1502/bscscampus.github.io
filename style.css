@@ -1,0 +1,354 @@
+*{
+    margin: 0; padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-transform: capitalize;
+    outline: none; border: none;
+    text-decoration: none;
+    font-weight: normal;
+    transition: all .2s linear;
+}
+
+html{
+    font-size: 62.5%;
+    overflow: hidden;
+}
+
+body{
+    overflow: hidden;
+    min-height: 100vh;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    background: linear-gradient(deeppink,purple);
+    padding:5.5rem;
+}
+
+section{
+    padding: 1rem 7%;
+    min-height: 100%;
+}
+.heading{
+    font-size: 5rem;
+    text-align: center;
+    padding: 1rem;
+    color: #fff;
+    
+}
+
+header{
+    width: 35rem;
+    background: rgba(255, 255, 255, .2);
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, .3);
+    backdrop-filter: blur(.4rem);
+    text-align: center;
+    padding: 1rem;
+    border-radius: 1rem;
+}
+
+header .user{
+    padding-top: 2rem;
+}
+
+header .user img{
+    margin: 1rem 0;
+    height: 15rem;
+    width: 15rem;
+    border-radius: 50%;
+    object-fit:contain;
+    box-shadow: 0 0 0 1rem rgba(255, 255, 255, .2);
+}
+
+header .user .name{
+    font-size: 3rem;
+    color: #fff;
+    padding: .5rem 0;
+}
+
+header .user .post{
+    font-size: 1.8rem;
+    color: #eee;
+    font-weight: lighter;
+}
+
+header .navbar{
+    padding: 1rem 3rem;
+}
+
+header .navbar ul li{
+    margin: 1rem 0;
+    list-style: none;
+}
+
+header .navbar ul li a{
+    display: block;
+    padding: 1rem;
+    font-size: 2rem;
+    color: #fff;
+    background: rgba(255, 255, 255, .2);
+    box-shadow: 0 1rem rgba(0, 0, 0, .2);
+    border-radius: 1rem;
+    transition: all .2s linear;
+}
+
+header .navbar ul li a:hover{
+    background: rgba(255, 255, 255, .5);
+    color: #555;
+    transition: none;
+}
+
+.container{
+    height: 63rem;
+    width: 100rem;
+    background: rgba(255, 255, 255, .2);
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, .3);
+    backdrop-filter: blur(.4rem);
+    border-radius: 1rem;
+    overflow: hidden;
+    right: auto;
+    float: left;
+    
+}
+
+.home{
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: column;
+    position: relative;
+    padding-bottom: 10rem;
+}
+
+.home  h3{
+    font-size: 2.5rem;
+    font-weight: lighter;
+    color: #eee;
+}
+
+.home .name span{
+    font-size: 4rem;
+    color: #fff;
+}
+
+.home .post{
+    padding: 1rem 0;
+}
+
+.home .post span{
+    font-size: 3rem;
+    color: #fff;
+}
+
+.home .share{
+    position: absolute;
+    left: 50%; bottom: 5rem;
+    transform: translateX(-50%);
+    display: flex;
+    padding: 1rem;
+    border-radius: 1rem;
+    background: rgba(255, 255, 255, .1);
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, .2);
+    transition: .2S linear;
+}
+
+.home .share a{
+    background: rgba(255, 255, 255, .1);
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, .2);
+    padding: 1rem 2rem;
+    margin: 1rem;
+    color: #fff;
+    font-size:2rem ;
+}
+
+.home .share a:hover{
+    background: rgba(255, 255, 255, .5);
+    color: #eee;
+}
+.profile{
+    display: flex;
+    flex-flow: column;
+    position: relative;
+    
+}
+
+.profile .content{
+    color: #fff;
+    padding: 0;
+    font-size: medium;
+    margin: 1rem 0;
+    list-style: none
+}
+
+.profile .content ul{
+    padding: 5rem;
+    list-style: none;
+    font-size: 2.5rem;
+}
+
+.profile .content ul li{
+    margin: 2rem ;
+}
+
+.education .box-container{
+    display: flex;
+    
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 2rem 0;
+}
+
+.education .box-container .box{
+    width: 30rem;
+    padding: 0 2rem;
+    padding-bottom: 4rem;
+    border-left: .2rem solid #eee;
+}
+
+.education .box-container .year{
+    font-size: 2rem;
+    color: #eee;
+    position: relative;
+}
+
+.education .box-container .year::before{
+    content: '';
+    position: absolute;
+    top: .3rem; left: -3.1rem;
+    height: 2rem;
+    width: 2rem;
+    border-radius: 50%;
+    background: #fff;
+}
+
+.education .box-container h3{
+    font-size: 3rem;
+    color: #fff;
+    padding-top: 1rem;
+}
+
+.education .box-container p{
+    font-size: 1.8rem;
+    color: #eee;
+    padding: 1rem 0;
+}
+
+.hobbies{
+    min-width: 100%;
+}
+
+.hobbies .box-container{
+    padding: 2rem 0;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.hobbies .box-container .box{
+    margin: 1rem;
+    padding: 1rem;
+    border-radius: 1rem;
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, .2);
+    background: rgba(255, 255, 255, .2);
+    text-align: center;
+    width: 32rem;
+}
+
+.hobbies .box-container .box i{
+    color: #fff;
+    font-size: 4.5rem;
+    padding: 1rem 0;
+}
+
+.hobbies .box-container .box p{
+    color: #eee;
+    font-size: 2rem;
+    padding: 5rem 5rem ;
+}
+
+.activities{
+    min-width: 100%;
+}
+
+.activities .box-container{
+    padding: 2rem 0;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.activities .box-container .box{
+    margin: 1rem;
+    padding: 1rem;
+    border-radius: 1rem;
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, .2);
+    background: rgba(255, 255, 255, .2);
+    text-align: center;
+    width: 32rem;
+}
+
+.activities .box-container .box:hover{
+    -webkit-transform: scale(0.9);
+    -ms-transform: scale(0.9);
+    transform: scale(0.9);
+    transition: 1s ease;
+}
+
+.activities .box-container .box img{
+    margin: 1rem 0;
+    height: 15rem;
+    width: 15rem;
+}
+
+.activities .box-container .icons{
+    left: 89%;
+    position: sticky;
+    display: inline-flex;
+    font-size: medium;
+    transition: 1s ease;
+}
+
+.resume{
+    min-width: 100%;
+}
+
+.resume .box-container{
+    padding: 2rem 0;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    position: relative;
+    left: 35%;
+}
+
+.resume .box-container .box{
+    margin: 1rem;
+    padding: 1rem;
+    border-radius: 1rem;
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, .2);
+    background: rgba(255, 255, 255, .2);
+    text-align: center;
+    width: 32rem;
+}
+
+.resume .box-container .box:hover{
+    -webkit-transform: scale(0.9);
+    -ms-transform: scale(0.9);
+    transform: scale(0.9);
+    transition: 1s ease;
+}
+
+.resume .box-container .box img{
+    margin: 1rem 0;
+    height: 35rem;
+    width: 25rem;
+}
+
+.resume .box-container .icons{
+    left: 89%;
+    position: sticky;
+    display: inline-flex;
+    font-size: medium;
+    transition: 1s ease;
+}
+
